@@ -1,0 +1,155 @@
+* {
+	margin: 0;
+	padding:0; 
+}
+
+body {
+    color: #949393;
+    font-family: "Trebuchet MS";
+    font-size: 13px;
+    line-height: 18px;
+}		
+
+#header {
+	position:relative;
+	width:100%;
+}
+
+.header-section-1 {
+    background: #292929 none repeat scroll 0% 0%;
+}
+
+.header-section-1 .col-1 {
+	margin-right: 115px;			
+}	
+
+.header-section-1 .col-1, .header-section-1 .col-2{
+	float: left;
+}
+
+#logo {
+    padding: 17px 0px 0px;
+    position: relative;
+    height: 93px;
+}
+
+/* Estas reglas generan el espacio para la imagen del logo */
+
+#logo:after {
+    background: #03C7DE none repeat scroll 0% 0%;
+    content: "";
+    display: inline-block;
+    left: -2000px;
+    right: 100%;
+    top: 0px;
+    bottom: 0px;
+    margin-right: -70px;
+    position: absolute;
+    z-index: 1;
+}
+
+.img-logo{
+	position: relative;	
+	z-index: 3;
+
+}
+
+#superfish-1 {
+	background:none;
+	margin-bottom:0;
+	padding:0;
+	width:auto;
+	z-index:101;
+	position:relative;
+}	
+
+#superfish-1 > li {
+	/* background:none; */
+	border-left: 1px solid #333;
+	font-weight: 800;
+	font-size: 14px;
+	line-height:18px; 
+	font-family: 'Open Sans', sans-serif;
+	margin:0;
+	/* overflow:inherit; */
+	padding:0;
+	text-transform:uppercase;
+	/* letter-spacing:2px; */
+}	
+
+#superfish-1 > li:first-child{
+	border-left: none;
+}
+
+#superfish-1 > li > a {
+	color:#fff;
+	padding:42px 50px 51px;
+	text-decoration:none;
+	-moz-transition:all 0.3s linear;
+	-o-transition:all 0.3s linear;
+	-webkit-transition:all 0.3s linear;
+	transition:all 0.3s linear;
+}
+
+#superfish-1 > li > a:hover{
+	color:#666;
+	background:#323232;
+	text-decoration:none;			
+}
+
+
+.sf-menu, .sf-menu * {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.sf-menu li {
+	float: left;
+}
+
+.sf-menu a {
+    display: block;
+    position: relative;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.header-section-2{
+	background:url("header-img.jpg") center top no-repeat scroll  #919194;
+}
+
+.region-header {
+    padding: 62px 0px 72px;
+}
+
+  
+@media (max-width: 479px) {
+	.col-2{
+		display: none;
+	}
+}
+
+@media (max-width: 767px) {
+	.col-2{
+		display: none;
+	}
+}
+
+@media (max-width: 995px) {
+	.col-2{
+		float: left;
+	}
+
+	.header-section-1 .col-1 {
+	    margin-right: 40px;
+	}
+	#superfish-1 > li > a{
+		padding: 42px 19px 51px;
+	}
+
+
+}

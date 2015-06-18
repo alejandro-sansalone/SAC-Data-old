@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'Smythe';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Smythe'), url(http://fonts.gstatic.com/s/smythe/v7/Jm45n8tWYP9aQ_wMnII99A.woff2) format('woff2'), url(http://fonts.gstatic.com/s/smythe/v7/UeOvazFlpeDk3j-QW5iu7g.woff) format('woff');
+}

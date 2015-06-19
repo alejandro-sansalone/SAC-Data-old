@@ -8,364 +8,23 @@
 	<link rel="stylesheet" href="skeleton-mobile.css">
 	<link rel="stylesheet" href="bolierplate.css">
 	<link rel="stylesheet" href="flexslider.css">
+	<link rel="stylesheet" href="estilos-sacdata.css">
 	
 	<!-- <link rel="stylesheet" href="\css\Skeleton-2.0.4\skeleton.css"> -->
-	<!-- <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'> -->
-	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<!-- <link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'> -->		
+	<!-- <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'> -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'> -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'> -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'> -->
+	<!-- <link href='http://fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'> -->
 
-	<link href='http://fonts.googleapis.com/css?family=Fugaz+One' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
-<link href='http://fonts.googleapis.com/css?family=Orbitron:400,900' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Just+Another+Hand' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:400,900' rel='stylesheet' type='text/css'>
+
 
 	<style>
 		
-		* {
-			margin:0;
-			padding: 0;
-		}
-
-		body {
-		    color: #949393;
-		    font-family: "Trebuchet MS";
-		    font-size: 13px;
-		    line-height: 18px;
-		}
-
-		/* a {
-			text-decoration: none;
-			letter-spacing: 1px;
-			transition: color .5s ease-in;	
-					
-		} */
-
-		.seccion-encabezado {
-			background: #292929 ;
-		}
-
-		.wrapper-1 {
-			position: relative;
-			width: 1200px;
-			margin: 0 auto;
-			padding:0;
-		}
-
-		.seccion-encabezado .columna-1 {
-			margin-right: 115px;
-		}	
-		
-		.seccion-encabezado .columna-1, .seccion-encabezado .columna-2 {
-			float: left;
-		}
-
-
-		.logo{
-			padding: 17px 0px 0px;
-			position: relative;
-			height: 93px;
-		}
-		
-		.img-logo{
-			position: relative;
-			z-index: 3;
-		}
-		
-		.menu * {
-			list-style: none;
-			margin:  0;
-			padding: 0;
-			width: auto;
-			position: relative;
-		}
-
-
-		.menu > li {
-			border-left: 1px solid #333;
-			font-size: 18px;
-			font-weight: 800;
-			/* font-family: 'Indie Flower', cursive; */
-			font-family: 'Montserrat', sans-serif;
-			text-transform: uppercase;
-			float: left;
-		}
-
-		.mennu > li:first-child{
-			border-left: none;
-		}		
-
-		.menu > li > a{
-			color:#666;
-			padding:42px 50px 51px;
-			text-decoration:none;
-		/* Transicion sobre el boton menu de nivel superior */		
-			-moz-transition:all 0.3s linear;
-			-o-transition:all 0.3s linear;
-			-webkit-transition:all 0.3s linear;
-			transition: all 0.5s linear 0.1s  ;
-		}
-		
-		/* Efecto aplicado al 'a' del menu de nivel superior */
-		.menu > li > a:hover{
-			color:#FFF;
-			background:#03C7DE;
-			text-decoration:none;
-		}
-		
-
-		.menu li ul {
-		/* Efecto fade-in/out*/
-			/*
-			position: absolute;
-			z-index: 1; 
-			visibility: hidden; 
-			opacity: 0; 
-			filter:alpha(opacity=0); 
-			transition: all 600ms linear;
-		*/
-			/* Se reemplaza el display: none por visibility hidden*/
-			/* para el efecto de fade-in/out*/
-			/*display: none;*/
-		/* Efecto fold-out*/
-		    position:absolute;
-
-		    left:0;
-		    top:110px;
-		    z-index:1; 
-		    max-height:0;
-		    overflow:hidden;
-		    -webkit-transform:perspective(600) rotate3d(1,0,0,-90deg);
-		    -webkit-transform-origin:50% 0;
-		    -webkit-transition:350ms;
-		    -moz-transition:350ms;
-		    -o-transition:350ms;
-		    transition: all 350ms linear;		
-		}
-
-		.menu li:hover ul{
-			/* Se reemplaza el display: block por visibility hidden*/
-			/* para el efecto de fade-in/out*/
-			/*display: block;*/
-			
-		/* Efecto fade-in/out*/
-			/*
-			visibility: visible; 
-			opacity: 1;
-			filter:alpha(opacity=100); 
-			*/
-		/* Efecto fold-out*/
-		    max-height:1000px;
-		    -webkit-transform:perspective(600) rotate3d(0,0,0,0);
-			padding: 15px 0px 15px;
- 
-		}
-		
-
-		.menu li ul li a:hover{
-			display: inline;
-		}
-
-		.menu a{
-			display: block;
-		}
-		
-		a:hover{
-			/*letter-spacing: 2px;*/
-		}
-
-		p {
-			font-size: 18px;
-		}
-
-		.menu > li ul {
-			background: #323232;
-			width: 220px;
-			text-align: center;
-			/*display: none;*/
-			/*padding: 15px 0px 11px;*/
-			/* top: 106px; */		
-			padding: 0;	
-		}
-
-		.menu > li ul li  {
-			border-bottom: 0px none;
-			/* float: nsone  */;
-			font-size: 14px;
-			height: auto;
-			padding: 0px;
-			margin: 0px;
-			width: auto ;		
-		}
-		
-		.menu > li ul li > a{
-			color: #666;
-			text-decoration: none;
-			padding: 5px 0px 5px;
-			transition: color 0.5s linear 0.1s;
-		}
-
-		.menu > li ul li > a:hover{
-			color:#fff;
-			background:#03c7de;
-			text-decoration:none;
-			display: block;			
-		}	
-
-		.clear	{
-			clear:both;
-		}
-
-		.logo:after {
-		    background: #03C7DE;
-		    content: "";
-		    /* display: inline-block; */
-		    left: -2000px;
-		    right: 100%;
-		    top: 0px;
-		    bottom: 0px;
-		    margin-right: -70px;
-		    position: absolute;
-		    z-index: 1;
-		}
-
-		.seccion-centro {
-			background: url("img/header-img.jpg") no-repeat scroll center top;
-		}
-
-		.region-header {
-		    padding: 62px 60px 72px;
-		}
-
-		.flexslider{
-			background: transparent;
-			border: none;
-			box-shadow: none; 
-		}
-
-		.slider .slides li .contenido-slider{
-			color: #FFF;
-			font-size: 24px;
-			line-height: 30px;
-			text-transform: uppercase;
-			font-weight: 800;
-			font-family: "Open Sans",sans-serif;	
-		}
-
-		.slider{
-			margin: 0 0 60px;
-		}
-
-		.slider .slides	{
-			padding-bottom: 40px;
-		}
-
-		#flexslider-1 .flex-control-nav {
-		    bottom: 0px;
-		    font-size: 0px;
-		    line-height: 0;
-		    z-index: 20;
-		    position: relative;
-		    text-align: left;
-		}
-
-		#flexslider-1 .flex-control-nav li {
-		    margin: 0px 30px 0px 0px;
-		}
-
-		#flexslider-1 .flex-control-nav li a {
-		    transition: all 0.3s linear 0s;
-		    width: 68px;
-		    height: 68px;
-		    box-shadow: none;
-		    border-radius: 500px;
-		    border: 1px solid #FFF;
-		    position: relative;
-		    background: transparent url("../images/thumb-1.png") no-repeat scroll 0px 0px;
-		}
-
-		#flexslider-1 .flex-control-nav li a:hover, #flexslider-1 .flex-control-nav li a.flex-active {
-		    border-color: #03C7DE;
-		    background-color: #03C7DE;
-		}
-
-		.flex-control-nav li {
-		    margin: 0px 6px;
-		    display: inline-block;
-		}
-
-		.slider .slides li .contenido-slider h1 {
-			font-size: 65px;
-			line-height: 79px;
-			margin-bottom: 25px;
-			font-weight:900;
-			/*font-family: 'Fugaz One', cursive;*/
-			/*font-family: 'Kaushan Script', cursive;*/
-			/*font-family: 'Lobster', cursive;*/
-			font-family: 'Lobster', cursive;
-		}
-
-		.slider .slides li .contenido-slider h2 {
-			font-size: 40px;
-			line-height: 62px;
-			/*font-family: 'Just Another Hand', cursive;*/
-			font-family: 'Orbitron', sans-serif;
-			margin-bottom: 25px;
-			font-weight:900;
-
-		}
-		.slider .slides li .contenido-slider p {
-			padding-right: 150px;		
-			letter-spacing:2px;
-			/*font-family: 'Oxygen', sans-serif;*/
-			/*font-family: 'Lovers Quarrel', cursive;*/
-			font-family: 'Just Another Hand', cursive;
-			font-size: 34px;
-			font-weight: 400;
-			text-transform: none;
-		}
-
-
-		@media (max-width: 1250px) {
-			.slider .slides li .contenido-slider h1 {
-				font-size: 55px;
-				line-height: 69px;
-				margin-bottom: 20px;
-				font-weight:800;
-			}
-			.slider .slides li .contenido-slider p {
-				padding-right: 150px;		
-				letter-spacing:2px;
-			}
-		}
-		@media (max-width: 995px) {
-			.slider .slides li .contenido-slider h1 {
-				font-size: 45px;
-				line-height: 57px;
-				margin-bottom: 20px;
-				font-weight:800;
-			}	
-		}
-		@media (max-width: 768px) {
-			.slider .slides li .contenido-slider h1 {
-				font-size: 45px;
-				line-height: 52px;
-				margin-bottom: 20px;
-				font-weight:800;
-			}	
-		}
-		@media (max-width: 479px) {
-			.slider .slides li .contenido-slider h1 {
-				font-size: 45px;
-				line-height: 47px;
-				margin-bottom: 15px;
-				font-weight: 800;
-			}	
-			.slider .slides li .contenido-slider p {
-				padding-right: 0;
-			}
-		}
 	</style>
 
 </head>
@@ -414,8 +73,8 @@
 								<li>
 									<span class="contenido-slider">
 										<h1 style="color:#FFF; ">SAC-Data</h1>
-										<h2 style="color:#FFF; ">Software / Hardware</h1>
-										<p style="color:#FFF; ">Mantenimiento de Sistemas informaticos</p>
+										<h2 style="color:#FFF; ">Sistemas Informaticos</h1>
+										<p style="color:#FFF; ">Mantenimiento de Sistemas Informaticos - Software / Hardware - Redes - Comunicaciones</p>
 									</span>							
 								</li>
 								<li>
@@ -425,13 +84,22 @@
 										<p style="color:#FFF; ">Diseño Web Responsive, optimizado para smartphones y tablets, con las ultimas tecnologias.  Html5 - Javascript - Php - Css3</p>
 									</div>							
 								</li>
+								<li>
+									<div class="contenido-slider">
+										<h1 style="color:#FFF; "> Comunicaciones</h1>
+										<h2>Redes - Fibra Optica - Telefonia</h2>
+										<p style="color:#FFF; ">Montaje y mantenimiento de redes informaticas, sobre UTP, fibra optica - Cableado Estructurado</p>
+									</div>							
+								</li>								
+								<li>
+									<div class="contenido-slider">
+										<h1 style="color:#FFF; ">Seguridad Electronica</h1>
+										<h2>Camaras - Alarmas</h2>
+										<p style="color:#FFF; ">Instalacion y mantenimiento de Sistemas de Seguridad, Camaras IP, Analogicas, Alarmas </p>
+									</div>							
+								</li>
 							</ul>
 
-							<!-- <ol>
-								<li></li>
-								<li></li>
-								<li></li>
-							</ol> -->
 						</div>
 
 					</section>
